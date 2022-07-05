@@ -105,6 +105,12 @@
 
 .mainProductos__imagen1 img{
 	width: 150%;
+	transition: all 1s;
+}
+
+.mainProductos__imagen1 img:hover{
+	height:	160%;
+	width: 160%;
 }
 
 .Hibisco{
@@ -126,7 +132,14 @@
 
 .mainProductos__imagen2 img{
 	width: 150%;
+	transition: all 1s;
 }
+
+.mainProductos__imagen2 img:hover{
+	height:	160%;
+	width: 160%;
+}
+
 .Lechuza{
 	font-size: 30px;
 }
