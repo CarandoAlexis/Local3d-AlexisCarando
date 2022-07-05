@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../multimedia/logo 3d.jpg" type="image/x-icon">
+    <!--link google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--link css-->
+    <link rel="stylesheet" href="../estilos/estilos.css">
+
+</head>
+<body>
+    <!--Logo y nav-->    
+    <header class="encabezado">
+        <img src="../multimedia/logo.png" class="encabezado__logo">
+        <nav>
+            <ul class="encabezado__menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>   
+                <li><a href="nosotros.html">Nosotros</a></li> 
+                <li><a href="servicios.html">Servicios</a></li> 
+                <li><a href="contacto.html">Contacto</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <!--Cierre logo y nav-->    
+    
+    <main class="mainContacto">
+        <!--Formulario de contacto-->
+        <section>
+            <h1 class="mainContacto__titulo">Contacto</h1>
+            <form class="mainContacto__formulario"> 
+                <p>
+                    <label for="nombre" class="mainContacto__formularioNombre">Nombre: </label>
+                    <input type="text" placeholder="Ingrese su nombre" name="nombre">
+                </p>
+        
+                <p>
+                    <label for="correo" class="mainContacto__formularioCorreo">Correo:</label>
+                    <input type="email" name="correo" placeholder="Ingrese su correo">
+                </p>
+        
+                <p>    
+                    <label for="consulta" class="mainContacto__formularioConsulta">Consulta:</label>
+                    <p>
+                    <textarea name="consulta" cols="50" rows="20">
+                    </textarea>
+                    </p>
+                </p>
+        
+                <input type="submit" value="Enviar Consulta">
+    
+            </form>
+        </section>
+        <!--Fin de formulario de contacto-->
+    </main>
+    
+    <!--Logo y suscripcion al sitio-->
+    <footer>
+        <img src="../multimedia/logo.png" class="piedepagina__logo">
+        <!--Suscripcion al sitio-->
+        <form class="piedepagina__suscribirse">
+            <fieldset>
+                <legend>Suscribete para mas novedades</legend>
+                <label for="correo">Correo:</label>
+                <input type="text" placeholder="Ingrese su correo electrónico" name="Correo">
+            </fieldset>
+            
+            <input type="submit" value="Suscribirte">
+        </form>    
+        <!--Fin de suscripcion al sitio-->
+    </footer>
+    
+</body>
+</html>
