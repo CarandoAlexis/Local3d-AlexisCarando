@@ -10,62 +10,89 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../estilos/bootstrap.min.css">
     <!--link css-->
     <link rel="stylesheet" href="../estilos/estilos.css">
 
 </head>
 <body>
     <!--Logo y nav-->    
-    <div class="contenedor2">
-        <!--Logo y nav-->    
-        <header class="encabezado">
-            <div class="logoheader">
-                <img src="../multimedia/logo.png">
-            </div> 
-            
-            <nav>
-                <ul class="encabezado__menu">
-                    <li class="encabezado__menuli"><a href="../index.html">Home</a></li>
-                    <li class="encabezado__menuli"><a href="productos.html">Productos</a></li>   
-                    <li class="encabezado__menuli"><a href="nosotros.html">Nosotros</a></li> 
-                    <li class="encabezado__menuli"><a href="servicios.html">Servicios</a></li> 
-                    <li class="encabezado__menuli"><a href="contacto.html">Contacto</a></li> 
-                </ul>
-            </nav>
-        </header>
-    <!--Cierre logo y nav-->    
-
-        <main class="mainServicios">    
-            <!--Servicios que brinda el local-->   
-            <section>
-                <h1 class="mainServicios__titulo">Servicios</h1>
-                <article>
-                    <h3 class="mainServicios__titulolista">El local le brinda los siguientes servicios:</h3>
-                    <ul class="mainServicios__lista">
-                        <li class="mainServicios__listaservicio1">Diseños a pedido</li> <img src="../multimedia/Diseño.png" class="mainServicios__listasimagen1">
-                        <li class="mainServicios__listaservicio2">Reparacion y Mantenimientos de impresoras 3d</li> <img src="../multimedia/Reparacion.jpg" class="mainServicios__listasimagen2">
-                    </ul>
-                </article>
-            </section>
-        <!--Cierre Servicios que brinda el local-->  
-        </main>
-        <!--Logo y suscripcion al sitio-->
-        <footer class="piedepagina">
-            <div class="logopie">
-            <img src="../multimedia/logo.png">
+    <header class="header">
+        <div class="container-fluid">
+        
+            <div class="row">
+                <div class="col">
+                    <img src="../multimedia/logo.png" class="logo">
+                </div>
+                
+                <div class="col">
+                </div>
+                
+                <div class="col">
+                    <div class="d-flex justify-content-end">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="../index.html" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                            <a class="nav-link" id="v-pills-productos-tab" data-toggle="pill" href="productos.html" role="tab" aria-controls="v-pills-productos" aria-selected="false">Productos</a>
+                            <a class="nav-link" id="v-pills-nosotros-tab" data-toggle="pill" href="nosotros.html" role="tab" aria-controls="v-pills-nosotros" aria-selected="false">Nosotros</a>
+                            <a class="nav-link active" id="v-pills-servicios-tab" data-toggle="pill" href="servicios.html" role="tab" aria-controls="v-pills-servicios" aria-selected="false">Servicios</a>
+                            <a class="nav-link" id="v-pills-contacto-tab" data-toggle="pill" href="contacto.html" role="tab" aria-controls="v-pills-contacto" aria-selected="false">Contacto</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--Suscripcion al sitio-->
-            <form class="piedepagina__suscribirse">
-                <fieldset>
-                    <legend>Suscribete para mas novedades</legend>
-                    <label for="correo">Correo:</label>
-                    <input type="text" placeholder="Ingrese su correo electrónico" name="Correo">
-                </fieldset>
+
+        </div>
+    </header>
+    <!--Cierre logo y nav-->     
+       
+
+    <main class="mainServicios">    
+        <!--Servicios que brinda el local-->   
+        <section>
+            <h1 class="mainServicios__titulo">Servicios</h1>
+            <article>
+                <h3 class="mainServicios__titulolista">El local le brinda los siguientes servicios:</h3>
+                <ul class="mainServicios__lista">
+                    <li class="mainServicios__listaservicio1">Diseños a pedido</li> <img src="../multimedia/Diseño.png" class="mainServicios__listasimagen1">
+                    <li class="mainServicios__listaservicio2">Reparacion y Mantenimientos de impresoras 3d</li> <img src="../multimedia/Reparacion.jpg" class="mainServicios__listasimagen2">
+                </ul>
+            </article>
+        </section>
+    <!--Cierre Servicios que brinda el local-->  
+    </main>
     
-                <input type="submit" value="Suscribirte">
-            </form>    
-            <!--Fin de suscripcion al sitio-->
-        </footer>
-    </div>
+    <!--Logo y suscripcion al sitio-->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <img src="../multimedia/logo.png" class="logo">
+                </div>
+
+                <div class="col">
+
+                </div>
+
+                <div class="col">
+                    <form class="d-flex justify-content-end">
+                        <fieldset>
+                            <legend class="h5 d-flex justify-content-end">Suscribete para mas novedades</legend>
+                            <div class="d-flex justify-content-end">
+                                <label for="correo" class="h6">Correo:</label>
+                                <input type="text" placeholder="Ingrese su correo electrónico" name="Correo">
+                            </div>
+                        </fieldset>
+                    
+                        <input type="submit" value="Suscribirte">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    
 </body>
 </html>

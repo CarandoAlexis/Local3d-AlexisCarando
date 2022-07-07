@@ -5,32 +5,17 @@
 }
 
 /*CSS INDEX*/
-/*aplicando grid*/
 
-.contenedor1{
-	display: grid;
-	grid-template-areas:
-	"encabezado encabezado encabezado"
-	"mainIndex mainIndex mainIndex"
-	"piedepagina piedepagina piedepagina";
-	grid-template-rows:12% 78% 12% ;
-	grid-template-columns:repeat(3,33%) ;
-	grid-row-gap:10px ;
-	grid-column-gap: 10px;
-	margin: 0;
+.mainindex{
 	background-image: url("../multimedia/Fondo.jpg");
     background-repeat:repeat-y;
     background-position:center;
     background-size:cover;
 }
 
-.mainIndex{
-	grid-area: mainIndex;
-}
-
-.mainIndex__local{
+.mainindex__local{
 	text-align: center;
-	padding: 10px;
+	
 }
 
 .imagen3d{
@@ -50,214 +35,85 @@
 	width: 90%;
 }
 
-.mainIndex__proyectos{
+.mainindex__proyectos{
 	text-align: center;
 	padding: 10px;
 }
 
-.mainIndex__texto{
+.mainindex__texto{
 	text-align: left;
 	padding: 10px;
 }
-/*CSS PRODUCTOS*/
-/*aplicando grid*/
 
-.contenedor2{
-	display: grid;
-	grid-template-areas:
-	"encabezado encabezado encabezado"
-	"mainProductos mainProductos mainProductos"
-	"piedepagina piedepagina piedepagina";
-	grid-template-rows:20% 60% 20% ;
-	grid-template-columns:repeat(3,33%) ;
-	grid-row-gap:10px ;
-	grid-column-gap: 10px;
-	margin: 0;
+/*CSS Productos*/
+.mainProductos{
 	background-image: url("../multimedia/Fondo.jpg");
     background-repeat:repeat-y;
     background-position:center;
     background-size:cover;
 }
 
-.mainProductos{
-	grid-area: mainProductos;
-
-}
 .mainProductos__titulo{
 	text-align: center;
-	font-size: 30px;
-	padding: 10px;
-}
-
-.cajaimagen1{
-	width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-}
-
-.mainProductos__imagen1{
-	flex-shrink: 0;
-    width: 150px;
-}
-
-.mainProductos__imagen1 img{
-	width: 150%;
-	transition: all 1s;
-}
-
-.mainProductos__imagen1 img:hover{
-	height:	160%;
-	width: 160%;
 }
 
 .Hibisco{
-	font-size: 30px;
+	padding: 20px;
 }
-.cajaimagen2{
-	width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
+.cajaimagen1{
+	padding: 20px;
 }
 
-.mainProductos__imagen2{
-	flex-shrink: 0;
-    width: 150px;
-}
-
-.mainProductos__imagen2 img{
-	width: 150%;
-	transition: all 1s;
-}
-
-.mainProductos__imagen2 img:hover{
-	height:	160%;
-	width: 160%;
+.mainProductos__imagen1{
+	width: 30%;
+	height: 30%;
 }
 
 .Lechuza{
-	font-size: 30px;
+	padding: 20px;
 }
 
-/*CSS Servicios*/
-.mainServicios__titulo{
-	text-align: center;
-	font-size: 30px;
-}
-.mainServicios__listaservicio1{
-	display: flex;
-	justify-content: flex-start;
-
+.cajaimagen2{
+	padding: 20px;
 }
 
-.mainServicios__listasimagen1 img{
-	width: 40px;
-	height: 40px;
+.mainProductos__imagen2{
+	width: 30%;
+	height: 30%;
 }
 
-.mainServicios__listasimagen2 img{
-	width: 10px;
-	height: 10px;
+/*CSS Contacto*/
+
+.formulario{
+	padding-left: 10px;
+	padding-bottom: 10px;
 }
 
-/*header y footer*/
-
-/*Gradiente*/
-
-.encabezado{
-	grid-area:encabezado;
-	background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+.mainContacto{
+	background-image: url("../multimedia/Fondo.jpg");
+    background-repeat:repeat-y;
+    background-position:center;
+    background-size:cover;
 }
 
-.logoheader{
-	display: flex;
-	justify-content: flex-start;
+
+/*CSS footer header*/
+
+.logo{
+	width: 120px;
+	height: 120px;
 }
 
-.logoheader img{
-	width: 70px;
-	height: 70px;
+.header{
+	background-color: #bdd4e7;
+	background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
 }
 
 .encabezado__menu{
-	display: flex;
 	list-style: none;
-	justify-content: flex-end;
-	padding: 10px;
 }
 
-.encabezado__menuli{
-	display: block;
-	padding: 1px;
+.footer{
+	background-color: #bdd4e7;
+	background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
 }
-
-.piedepagina{
-	grid-area: piedepagina;
-	background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
-}
-
-.logopie{
-	display: flex;
-	justify-content:flex-start;
-	width: 70px;
-	height: 70px;
-}
-
-.piedepagina__suscribirse{
-	display: flex;
-	justify-content: flex-end;
-	padding: 10px;
-}
-
-/*MOBILE*/
-@media screen and (max-width:1024px) {
-	.contenedor1{
-		display: grid;
-		grid-template-rows:1fr 4fr 1fr;
-		grid-template-columns:1fr;
-		grid-template-areas:
-	"encabezado"
-	"mainIndex"
-	"piedepagina";
-	}
-
-	.imagen3d{
-		display: flex;
-		align-items: center;
-		justify-content:center;
-		padding: 10px;
-		
-	}
-	.imagen3d img{
-		width: 400px;
-		height: 200px;
-
-	}
-	.encabezado{
-		background-color: blueviolet;
-	}
-	.piedepagina{
-		background-color: blueviolet;
-	}
-	
-	.contenedor2{
-		display: grid;
-		grid-template-rows:1fr 3fr 1fr;
-		grid-template-columns:1fr;
-		grid-template-areas:
-	"encabezado"
-	"mainProductos"
-	"piedepagina";
-	}
-	.Hibisco{
-		font-size: 20px;
-	}
-	.Lechuza{
-		font-size: 20px;
-	}
-}	

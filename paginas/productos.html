@@ -10,74 +10,103 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../estilos/bootstrap.min.css">
     <!--link css-->
     <link rel="stylesheet" href="../estilos/estilos.css">
 
 </head>
-<body>
-    <div class="contenedor2">
-        <!--Logo y nav-->    
-        <header class="encabezado">
-            <div class="logoheader">
-                <img src="../multimedia/logo.png">
-            </div> 
-            
-            <nav>
-                <ul class="encabezado__menu">
-                    <li class="encabezado__menuli"><a href="../index.html">Home</a></li>
-                    <li class="encabezado__menuli"><a href="productos.html">Productos</a></li>   
-                    <li class="encabezado__menuli"><a href="nosotros.html">Nosotros</a></li> 
-                    <li class="encabezado__menuli"><a href="servicios.html">Servicios</a></li> 
-                    <li class="encabezado__menuli"><a href="contacto.html">Contacto</a></li> 
-                </ul>
-            </nav>
-        </header>
-        <!--Cierre logo y nav-->    
 
-        <!--Presentacion de los productos-->
-        <main class="mainProductos">
-            <section>
-                <h1 class="mainProductos__titulo">Productos</h1>
-                <!--Descripcion de los productos con imagen-->
-                <article>
-                    <p class="Hibisco">Cortante y marcador hibisco</p>
-                    <div class="cajaimagen1">
-                        <div class="mainProductos__imagen1">
-                        <img src="../multimedia/Hibisco.jpg">
+
+<body>
+    <!--Logo y nav-->    
+    <header class="header">
+        <div class="container-fluid">
+        
+            <div class="row">
+                <div class="col">
+                    <img src="../multimedia/logo.png" class="logo">
+                </div>
+                
+                <div class="col">
+                </div>
+                
+                <div class="col">
+                    <div class="d-flex justify-content-end">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="../index.html" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                            <a class="nav-link active" id="v-pills-productos-tab" data-toggle="pill" href="productos.html" role="tab" aria-controls="v-pills-productos" aria-selected="false">Productos</a>
+                            <a class="nav-link" id="v-pills-nosotros-tab" data-toggle="pill" href="nosotros.html" role="tab" aria-controls="v-pills-nosotros" aria-selected="false">Nosotros</a>
+                            <a class="nav-link" id="v-pills-servicios-tab" data-toggle="pill" href="servicios.html" role="tab" aria-controls="v-pills-servicios" aria-selected="false">Servicios</a>
+                            <a class="nav-link" id="v-pills-contacto-tab" data-toggle="pill" href="contacto.html" role="tab" aria-controls="v-pills-contacto" aria-selected="false">Contacto</a>
                         </div>
                     </div>
-                    
-                    <p class="Lechuza">Cortante y marcador lechuza</p>
-                    <div class="cajaimagen2">
-                        <div class="mainProductos__imagen2">
-                        <img src="../multimedia/Lechuza chiquita.jpg">
-                        </div>
-                    </div>   
-                        
-                </article>
-                <!--Fin de descripcion de los productos con imagen-->
-            </section>
-        <!--Fin de presentacion de los productos-->
-        </main>
-
-        <!--Logo y suscripcion al sitio-->
-        <footer class="piedepagina">
-            <div class="logopie">
-            <img src="../multimedia/logo.png">
+                </div>
             </div>
-            <!--Suscripcion al sitio-->
-            <form class="piedepagina__suscribirse">
-                <fieldset>
-                    <legend>Suscribete para mas novedades</legend>
-                    <label for="correo">Correo:</label>
-                    <input type="text" placeholder="Ingrese su correo electrónico" name="Correo">
-                </fieldset>
-        
-                <input type="submit" value="Suscribirte">
-            </form>    
-            <!--Fin de suscripcion al sitio-->
-        </footer>
-    </div>
+
+        </div>
+    </header>
+    <!--Cierre logo y nav-->     
+
+    <!--Presentacion de los productos-->
+    <main class="mainProductos">
+        <section>
+            <h1 class="mainProductos__titulo">Productos</h1>
+            <!--Descripcion de los productos con imagen-->
+            <article>
+                <p class="Hibisco h3">Cortante y marcador hibisco</p>
+                <div class="cajaimagen1">
+                    <div class=>
+                        <img src="../multimedia/Hibisco.jpg" class="mainProductos__imagen1">
+                    </div>
+                </div>
+                
+                <p class="Lechuza h3">Cortante y marcador lechuza</p>
+                
+                <div class="cajaimagen2">
+                    <div>
+                        <img src="../multimedia/Lechuza chiquita.jpg" class="mainProductos__imagen2">
+                    </div>
+                </div>   
+                    
+            </article>
+            <!--Fin de descripcion de los productos con imagen-->
+        </section>
+    <!--Fin de presentacion de los productos-->
+    </main>
+
+    <!--Logo y suscripcion al sitio-->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <img src="../multimedia/logo.png" class="logo">
+                </div>
+
+                <div class="col">
+
+                </div>
+
+                <div class="col">
+                    <form class="d-flex justify-content-end">
+                        <fieldset>
+                            <legend class="h5 d-flex justify-content-end">Suscribete para mas novedades</legend>
+                            <div class="d-flex justify-content-end">
+                                <label for="correo" class="h6">Correo:</label>
+                                <input type="text" placeholder="Ingrese su correo electrónico" name="Correo">
+                            </div>
+                        </fieldset>
+                    
+                        <input type="submit" value="Suscribirte">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
