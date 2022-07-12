@@ -96,6 +96,17 @@
     background-size:cover;
 }
 
+/*CSS Nosotros*/
+.mainNosotros__imagen{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+.mainNosotros__imagen img{
+	width: 80%;
+	height: 80%;
+}
+
 
 /*CSS footer header*/
 
@@ -116,4 +127,23 @@
 .footer{
 	background-color: #bdd4e7;
 	background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+}
+
+@media screen and (max-width:768px){
+	.logo{
+		width: 70px;
+		height: 70px;
+	}
+
+	.header{
+		background-color: #7f5a83;
+		background-image: linear-gradient(315deg, #533057 0%, #2a7bb4 74%);
+	}
+
+	.footer{
+		background-color: #7f5a83;
+		background-image: linear-gradient(315deg, #533057 0%, #2a7bb4 74%);
+	}
+
+	
 }
