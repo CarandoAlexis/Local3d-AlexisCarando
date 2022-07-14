@@ -1,0 +1,39 @@
+.mainindex{
+	background-image: url("../multimedia/Fondo.jpg");
+    background-repeat:repeat-y;
+    background-position:center;
+    background-size:cover;
+}
+
+.mainindex__local{
+	text-align: center;
+	
+}
+
+.mainindex__texto{
+	font-size: 20px;
+	text-align: left;
+	padding: 10px;	
+}
+
+.imagen3d{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+    img{
+        width: 80%;
+	    height: 80%;
+	    transition: all 1s;
+        &:hover{
+            height:	90%;
+	        width: 90%;
+        }
+
+        }
+}
+
+
+.mainindex__proyectos{
+	text-align: center;
+	padding: 10px;
+}
