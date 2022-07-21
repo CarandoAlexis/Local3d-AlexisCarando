@@ -5,15 +5,20 @@
     background-size:cover;
 }
 
+@mixin textos($text-align,$font-size,$padding) {
+	text-align: $text-align;
+	font-size: $font-size;
+	padding: $padding;
+}
 .mainindex__local{
-	text-align: center;
+	@include textos(center,70px,10px);
+	text-shadow: 1px 1px;
+	font-style: italic;
 	
 }
 
 .mainindex__texto{
-	font-size: 20px;
-	text-align: left;
-	padding: 10px;	
+	@include textos(left,20px,10px);
 }
 
 .imagen3d{
@@ -32,8 +37,6 @@
         }
 }
 
-
 .mainindex__proyectos{
-	text-align: center;
-	padding: 10px;
+	@extend .mainindex__local;
 }
