@@ -1,0 +1,61 @@
+.mainServicios{
+	background-image: url("../multimedia/Fondo.jpg");
+    background-repeat:repeat-y;
+    background-position:center;
+    background-size:cover;
+    
+}
+
+@mixin textos($text-align,$font-size,$padding) {
+	text-align: $text-align;
+	font-size: $font-size;
+	padding: $padding;
+	
+}
+
+.mainServicios__titulo{
+	@include textos(center,70px,10px);
+	text-shadow: 1px 1px;
+	font-style: italic;
+    @media screen and (max-width: 768px){
+		@include textos(center,30px,5px)
+	}
+}
+
+.mainServicios__titulolista{
+    @include textos(start,45px,35px);
+    @media screen and (max-width: 768px){
+		@include textos(start,20px,5px)
+	}
+    
+}
+
+.ServiciosLista{
+	width: 100%;
+    max-width: 50%;
+    flex-wrap: wrap;       
+    
+}
+
+.cajaservicios{
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 1s ease;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    &:hover{
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+        width: 110%;
+        transform: translateX(3%);
+    }
+    @media screen and (max-width: 768px){
+        p{
+            @include textos(start,20px,5px) 
+        }
+    }
+}

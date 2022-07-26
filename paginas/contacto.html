@@ -50,33 +50,34 @@
     
     <main class="mainContacto">
         <!--Formulario de contacto-->
-        <div class="formulario">
             <section>
                 <h1 class="mainContacto__titulo">Contacto</h1>
-                <form class="mainContacto__formulario"> 
-                    <p>
-                        <label for="nombre" class="mainContacto__formularioNombre">Nombre: </label>
-                        <input type="text" placeholder="Ingrese su nombre" name="nombre">
-                    </p>
-        
-                    <p>
-                        <label for="correo" class="mainContacto__formularioCorreo">Correo:</label>
-                        <input type="email" name="correo" placeholder="Ingrese su correo">
-                    </p>
-        
-                    <p>    
-                        <label for="consulta" class="mainContacto__formularioConsulta">Consulta:</label>
+                <div class="formulario d-flex flex-row">
+                    <form class="mainContacto__formulario"> 
                         <p>
-                        <textarea name="consulta" cols="50" rows="20">
-                        </textarea>
+                            <label for="nombre" class="mainContacto__formularioNombre">Nombre: </label>
+                            <input type="text" placeholder="Ingrese su nombre" name="nombre">
                         </p>
-                    </p>
         
-                    <input type="submit" value="Enviar Consulta">
-    
-                </form>
+                        <p>
+                            <label for="correo" class="mainContacto__formularioCorreo">Correo:</label>
+                            <input type="email" name="correo" placeholder="Ingrese su correo">
+                        </p>
+        
+                        <p>    
+                            <label for="consulta" class="mainContacto__formularioConsulta">Consulta:</label>
+                            <p>
+                            <textarea name="consulta" cols="40" rows="20">
+                            </textarea>
+                            </p>
+                        </p>
+        
+                        <input type="submit" value="Enviar Consulta">
+                    
+                    </form>
+                </div>
             </section>
-        </div>
+        
         <!--Fin de formulario de contacto-->
     </main>
     

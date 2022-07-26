@@ -1,0 +1,58 @@
+.mainProductos{
+	background-image: url("../multimedia/Fondo.jpg");
+    background-repeat:repeat-y;
+    background-position:center;
+    background-size:cover;
+    
+}
+
+@mixin textos($text-align,$font-size,$padding) {
+	text-align: $text-align;
+	font-size: $font-size;
+	padding: $padding;
+	
+}
+
+.mainProductos__titulo{
+	@include textos(center,70px,10px);
+	text-shadow: 1px 1px;
+	font-style: italic;
+    @media screen and (max-width: 768px){
+		@include textos(center,30px,5px)
+	}
+}
+
+
+.ProductosLista{
+	width: 100%;
+    max-width: 1980px;
+    @media screen and (max-width: 768px){
+    flex-wrap: wrap;       
+    }
+}
+
+.cajaimagenes{
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 1s ease;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    &:hover{
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+        width: 110%;
+        transform: translateY(-2%);
+    }
+
+}
+
+.nombreimagen{
+    padding: 15px;
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+.mainNosotros{
+	background-image: url("../multimedia/Fondo.jpg");
+    background-repeat:repeat-y;
+    background-position:center;
+    background-size:cover;
+    
+}
+
+@mixin textos($text-align,$font-size,$padding) {
+	text-align: $text-align;
+	font-size: $font-size;
+	padding: $padding;
+	
+}
+
+.mainNosotros__titulo{
+	@include textos(center,70px,10px);
+	text-shadow: 1px 1px;
+	font-style: italic;
+    @media screen and (max-width: 768px){
+		@include textos(center,30px,5px)
+	}
+}
+
+.cajanosotros{
+    width: 80%;
+    height: 60%;
+    padding: 20px 20px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    img{
+        width: 60%;
+        height: auto;
+        float: left;
+        border-radius: 3px;
+        padding: 20px;
+        @media screen and (max-width: 768px){
+            width:100%;
+            }
+    }
+    p{
+        padding-left: 20px;
+    }
+    
+}

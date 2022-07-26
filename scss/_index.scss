@@ -9,16 +9,23 @@
 	text-align: $text-align;
 	font-size: $font-size;
 	padding: $padding;
+	
 }
 .mainindex__local{
 	@include textos(center,70px,10px);
 	text-shadow: 1px 1px;
 	font-style: italic;
+	@media screen and (max-width: 768px){
+		@include textos(center,30px,5px)
+	}
 	
 }
 
 .mainindex__texto{
 	@include textos(left,20px,10px);
+	@media screen and (max-width: 768px){
+		@include textos(center,13px,5px)
+	}
 }
 
 .imagen3d{

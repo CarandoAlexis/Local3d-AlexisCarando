@@ -10,11 +10,21 @@
   padding: 10px;
   text-shadow: 1px 1px;
   font-style: italic; }
+  @media screen and (max-width: 768px) {
+    .mainindex__local, .mainindex__proyectos {
+      text-align: center;
+      font-size: 30px;
+      padding: 5px; } }
 
 .mainindex__texto {
   text-align: left;
   font-size: 20px;
   padding: 10px; }
+  @media screen and (max-width: 768px) {
+    .mainindex__texto {
+      text-align: center;
+      font-size: 13px;
+      padding: 5px; } }
 
 .imagen3d {
   display: flex;
@@ -67,3 +77,174 @@
     font-size: 14px;
     color: white;
     font-weight: bold; } }
+
+.mainProductos {
+  background-image: url("../multimedia/Fondo.jpg");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover; }
+
+.mainProductos__titulo {
+  text-align: center;
+  font-size: 70px;
+  padding: 10px;
+  text-shadow: 1px 1px;
+  font-style: italic; }
+  @media screen and (max-width: 768px) {
+    .mainProductos__titulo {
+      text-align: center;
+      font-size: 30px;
+      padding: 5px; } }
+
+.ProductosLista {
+  width: 100%;
+  max-width: 1980px; }
+  @media screen and (max-width: 768px) {
+    .ProductosLista {
+      flex-wrap: wrap; } }
+
+.cajaimagenes {
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease; }
+  .cajaimagenes img {
+    width: 100%;
+    height: auto; }
+  .cajaimagenes:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    width: 110%;
+    transform: translateY(-2%); }
+
+.nombreimagen {
+  padding: 15px;
+  text-align: center; }
+
+.mainContacto {
+  background-image: url("../multimedia/Fondo.jpg");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover; }
+
+.mainContacto__titulo {
+  text-align: center;
+  font-size: 70px;
+  padding: 10px;
+  text-shadow: 1px 1px;
+  font-style: italic; }
+  @media screen and (max-width: 768px) {
+    .mainContacto__titulo {
+      text-align: center;
+      font-size: 30px;
+      padding: 5px; } }
+
+.formulario {
+  justify-content: left;
+  padding-left: 60px;
+  padding-bottom: 60px; }
+  @media screen and (max-width: 768px) {
+    .formulario {
+      width: 60%; } }
+  .formulario p {
+    text-align: start;
+    font-size: 20px;
+    padding: 10px; }
+    @media screen and (max-width: 768px) {
+      .formulario p {
+        text-align: start;
+        font-size: 10px;
+        padding: 5px; } }
+
+.mainServicios {
+  background-image: url("../multimedia/Fondo.jpg");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover; }
+
+.mainServicios__titulo {
+  text-align: center;
+  font-size: 70px;
+  padding: 10px;
+  text-shadow: 1px 1px;
+  font-style: italic; }
+  @media screen and (max-width: 768px) {
+    .mainServicios__titulo {
+      text-align: center;
+      font-size: 30px;
+      padding: 5px; } }
+
+.mainServicios__titulolista {
+  text-align: start;
+  font-size: 45px;
+  padding: 35px; }
+  @media screen and (max-width: 768px) {
+    .mainServicios__titulolista {
+      text-align: start;
+      font-size: 20px;
+      padding: 5px; } }
+
+.ServiciosLista {
+  width: 100%;
+  max-width: 50%;
+  flex-wrap: wrap; }
+
+.cajaservicios {
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 1s ease; }
+  .cajaservicios img {
+    width: 100%;
+    height: auto; }
+  .cajaservicios:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    width: 110%;
+    transform: translateX(3%); }
+  @media screen and (max-width: 768px) {
+    .cajaservicios p {
+      text-align: start;
+      font-size: 20px;
+      padding: 5px; } }
+
+.mainNosotros {
+  background-image: url("../multimedia/Fondo.jpg");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover; }
+
+.mainNosotros__titulo {
+  text-align: center;
+  font-size: 70px;
+  padding: 10px;
+  text-shadow: 1px 1px;
+  font-style: italic; }
+  @media screen and (max-width: 768px) {
+    .mainNosotros__titulo {
+      text-align: center;
+      font-size: 30px;
+      padding: 5px; } }
+
+.cajanosotros {
+  width: 80%;
+  height: 60%;
+  padding: 20px 20px;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden; }
+  .cajanosotros img {
+    width: 60%;
+    height: auto;
+    float: left;
+    border-radius: 3px;
+    padding: 20px; }
+    @media screen and (max-width: 768px) {
+      .cajanosotros img {
+        width: 100%; } }
+  .cajanosotros p {
+    padding-left: 20px; }
